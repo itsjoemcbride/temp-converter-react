@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+Array [
+  <h1>
+    Temperature Converter
+  </h1>,
+  <form>
+    <label
+      htmlFor="celsius"
+    >
+      Celsius
+    </label>
+    <input
+      id="celsius"
+      onChange={[Function]}
+      type="number"
+      value={0}
+    />
+    <label
+      htmlFor="fahrenheit"
+    >
+      Fahrenheit
+    </label>
+    <input
+      id="fahrenheit"
+      onChange={[Function]}
+      type="number"
+      value={0}
+    />
+  </form>,
+]
+`;

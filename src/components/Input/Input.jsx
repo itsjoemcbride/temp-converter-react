@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 export default function Input({ label, value, changeHandler }) {
   return (
     <>
-      <label htmlFor={label}>{label}</label>
+      <label htmlFor={label.toLowerCase()}>{label}</label>
       <input
         id={label.toLowerCase()}
         type="number"

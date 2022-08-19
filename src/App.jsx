@@ -7,7 +7,6 @@ function App() {
   const [values, setValues] = useState({ celsius: 0, fahrenheit: 0 });
 
   const handleChange = (event) => {
-    console.log(event);
     // if (event.target.value) {
     //   const temperature = event.target.id;
     //   const conversion = event.target.value;
@@ -19,14 +18,12 @@ function App() {
         celsius: event.target.value,
         fahrenheit: tryConvert(event.target.value, "toFahrenheit"),
       });
-      console.log(tryConvert(event.target.value, "toFahrenheit"));
     } else {
       setValues({
         ...values,
         celsius: tryConvert(event.target.value, "toCelsius"),
         fahrenheit: event.target.value,
       });
-      console.log(tryConvert(event.target.value, "toCelsius"));
     }
   };
 
